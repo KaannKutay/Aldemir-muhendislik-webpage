@@ -1,0 +1,52 @@
+body{
+    font-family: 'Dosis', sans-serif;
+    color: #fff;
+  }
+  
+  @media only screen and (max-width:768px){
+      .navbar-toggler-icon i{color:white!important;}
+  }
+  
+  .outer-bg{
+    background:url(../img/black-paper-background.jpg);
+    background-attachment:fixed;
+    background-size:cover;
+    width:100%;
+    background-position:top center;
+  }
+
+  .nav-item .nav-link{
+    display: block;
+     text-transform: uppercase;
+     font-size: 12px;
+     letter-spacing: 3px;
+     font-weight: 600;
+   padding:10px 16px!important;
+     color: #fff;
+     position: relative;
+     transition: 0.15s;
+ }
+
+ .nav-item .nav-link:hover{
+  color:#FAB702;
+  }
+  
+  .nav-item{
+    position:relative;
+  }
+  
+  .nav-item:after {
+      position:absolute;
+    content:"";
+    top:50%;
+    right:0;
+    transform:translatey(-50%);
+      width:4px;
+    height:4px;
+    border-radius:50%;
+    background-color:#FAB702;
+  }
+  
+  .nav-item:last-child:after{
+    opacity:0!important;
+  }
